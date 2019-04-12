@@ -41,12 +41,12 @@ def article(topic,filename):
 
 
 # initialization
-glove_filename = './glove/glove.6B.300d.txt'
-articles_dirname = './bbc'
+#glove_filename = './glove.6B.300d.txt'
+#articles_dirname = './bbc'
 
-# i = sys.argv.index('server:app')
-# glove_filename = sys.argv[i+1]
-# articles_dirname = sys.argv[i+2]
+i = sys.argv.index('server:app')
+glove_filename = sys.argv[i+1]
+articles_dirname = sys.argv[i+2]
 
 n_best = 5
 gloves = load_glove(glove_filename)
