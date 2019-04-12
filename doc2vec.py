@@ -186,6 +186,6 @@ if __name__ == '__main__':
     gloves = load_glove(glove_filename)
     articles = load_articles(articles_dirname, gloves)
 
-    print(gloves['dog'])
-    # print(distances(articles[0],articles))
-    print(recommended(articles[0],articles,2))
+    # print(gloves['dog'])
+    # # print(distances(articles[0],articles))
+    # print(recommended(articles[0],articles,2))

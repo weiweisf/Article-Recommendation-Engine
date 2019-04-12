@@ -51,10 +51,8 @@ articles_dirname = './bbc'
 n_best = 5
 gloves = load_glove(glove_filename)
 articles = load_articles(articles_dirname, gloves)
-# print(articles[0])
 topics = [a[0].split('/')[0] for a in articles]
 filenames = [a[0].split('/')[1] for a in articles]
-# print(filenames[0])
 
 # app.run('0.0.0.0')
 # app.run()
